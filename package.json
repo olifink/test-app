@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "api",
+      "web"
+    ]
+  },
+  "scripts": {
+    "dev": "yarn rw dev",
+    "sb": "yarn rw sb",
+    "dbmigrate": "yarn rw prisma migrate dev --name",
+    "dbseed": "yarn rw prisma db seed --preview-feature",
+    "dbreset": "yarn rw prisma migrate reset --force --preview-feature"
+  },
+  "devDependencies": {
+    "@cedarjs/auth-dbauth-setup": "1.1.0",
+    "@cedarjs/cli-storybook-vite": "1.1.0",
+    "@cedarjs/core": "1.1.0",
+    "@cedarjs/project-config": "1.1.0"
+  },
+  "eslintConfig": {
+    "extends": "@cedarjs/eslint-config",
+    "root": true
+  },
+  "engines": {
+    "node": "=20.x"
+  },
+  "prisma": {
+    "seed": "yarn rw exec seed"
+  },
+  "packageManager": "yarn@4.4.0",
+  "resolutions": {
+    "@storybook/react-dom-shim@npm:7.6.17": "https://verdaccio.tobbe.dev/@storybook/react-dom-shim/-/react-dom-shim-8.0.8.tgz"
+  },
+  "dependencies": {
+    "@mantine/form": "^8.3.2",
+    "@prisma/client": "^6.16.2",
+    "@tabler/icons-react": "^3.19.0",
+    "moment": "^2.30.1",
+    "react-icons": "^5.3.0",
+    "recharts": "^2.15.0"
+  }
+}
