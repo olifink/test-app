@@ -9,9 +9,9 @@
   "scripts": {
     "dev": "yarn rw dev",
     "sb": "yarn rw sb",
-    "dbmigrate": "yarn rw prisma migrate dev --name",
-    "dbseed": "yarn rw prisma db seed --preview-feature",
-    "dbreset": "yarn rw prisma migrate reset --force --preview-feature"
+    "dbmigrate": "yarn rw prisma migrate dev",
+    "dbseed": "yarn rw prisma db seed",
+    "dbreset": "yarn rw prisma migrate reset"
   },
   "devDependencies": {
     "@cedarjs/auth-dbauth-setup": "1.1.0",
