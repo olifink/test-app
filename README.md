@@ -1,4 +1,4 @@
-# README
+# README fixed
 
 demo app for `Error: You don't have permission to do that.` problem
 
